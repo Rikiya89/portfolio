@@ -376,6 +376,14 @@ footer {
         height: 5.25rem;
     }
 
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project-container {
+        width: 20.875rem;
+    }
+
     .contact-form-container {
         max-width: 23.75rem;
     }
