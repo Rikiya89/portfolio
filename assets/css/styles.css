@@ -34,6 +34,25 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+.pc {
+    display: block;
+}
+
+.sp {
+    display: none;
+}
+
+.pb {
+    padding-bottom: 24px;
+}
+
+.pt {
+    padding-top: 6px;
+}
+
+.mt {
+    margin-top: 6px;
+}
 
 ul {
     list-style-type: none;
@@ -114,9 +133,16 @@ nav ul li {
 
 .bio {
     width: 25rem;
-    padding: 0.625rem;
     border-radius: 6px;
     box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio_inner {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    font-size: 15px;
 }
 
 .bio h1 {
@@ -133,6 +159,11 @@ nav ul li {
     padding: 1rem 6rem;
 }
 
+.more-about-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .more-about h2 {
     margin-bottom: var(--bottom-margin);
     text-align: center;
@@ -141,6 +172,7 @@ nav ul li {
 .more-about p {
     line-height: var(--line-height);
     padding: 0.4rem;
+    font-size: 15px;
 }
 
 .skills {
@@ -179,14 +211,22 @@ nav ul li {
     margin-bottom: 2rem;
 }
 
+.project-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .project-pic {
-    width: 84%;
-    height: 84%;
+    width: 240px;
 }
 
 .projects-container {
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+.projects-containers {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -197,16 +237,20 @@ nav ul li {
 
 .project-container {
     text-align: center;
-    width: 31.875rem;
+    width: 450px;
     padding: 1rem;
 }
 
 .project-container p {
     padding: 0.4rem;
+    font-size: 15px;
+    text-align: left;
+    line-height: 1.5;
 }
 
 .project-title {
     margin-bottom: var(--bottom-margin);
+    font-size: 18px;
 }
 
 .project-details {
@@ -315,7 +359,102 @@ footer {
     height: 3rem;
 }
 
+@media screen and (max-width: 1040px) {
+    .pc {
+        display: none;
+    }
+    
+    .sp {
+        display: block;
+    }
+
+
+    /*changes reflects on screen with a width of 720px and below*/
+    nav {
+        padding: 1.5rem 1rem;
+    }
+
+    nav ul {
+        position: fixed;
+        background-color: var(--bg-color);
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
+        text-align: center;
+        transform: translateX(120%);
+        transition: transform 0.5s ease-in;
+    }
+
+    nav ul li {
+        margin: 8px;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    nav ul.show {
+        transform: translateX(0);
+    }
+
+    .hero {
+        margin-top: -4rem;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .hero img {
+        height: 37.5rem;
+        width: 30rem;
+    }
+
+    .bio {
+        margin-top: -10rem;
+        width: 20.5rem;
+    }
+
+    .more-about {
+        margin-top: 2rem;
+        padding: 1rem 3.5rem;
+    }
+
+    .more-about h2 {
+        text-align: center;
+    }
+
+    .more-about p {
+        text-align: justify;
+    }
+
+    .icon {
+        width: 5.875rem;
+        height: 5.25rem;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-container {
+        width: 20.875rem;
+    }
+
+    .contact-form-container {
+        max-width: 23.75rem;
+    }
+}
+
 @media screen and (max-width: 720px) {
+    .pc {
+        display: none;
+    }
+    
+    .sp {
+        display: block;
+    }
+
 
     /*changes reflects on screen with a width of 720px and below*/
     nav {
@@ -382,6 +521,7 @@ footer {
 
     .projects-container {
         flex-direction: column;
+        align-items: center;
     }
 
     .project-container {
@@ -394,6 +534,15 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+
+    .pc {
+        display: none;
+    }
+    
+    .sp {
+        display: block;
+    }
+
     .hero img {
         height: 37.5rem;
         width: 23rem;
