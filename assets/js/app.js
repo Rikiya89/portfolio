@@ -30,3 +30,61 @@ navLink.forEach((link) =>
         ul.classList.remove("show");
     })
 );
+
+//Fade-In animations 
+window.addEventListener('scroll', function() {
+    let iconSections = document.querySelectorAll('.iconSection');
+
+    iconSections.forEach(function(iconSection) {
+        let position = iconSection.getBoundingClientRect();
+
+        // Check if the section is in the viewport
+        if (position.top <= window.innerHeight && position.bottom >= 0) {
+            // Calculate opacity based on how far the element is from the top of the viewport
+            let opacity = (window.innerHeight - position.top) / window.innerHeight;
+
+            // Apply the calculated opacity
+            iconSection.style.opacity = Math.min(opacity, 1);
+        }
+    });
+});
+
+
+window.addEventListener('scroll', function() {
+    // For iconSection and first-set classes
+    let commonSections = document.querySelectorAll('.iconSection, .first-set');
+    
+    commonSections.forEach(function(section, index) {
+        let position = section.getBoundingClientRect();
+        
+        // Check if the section is in the viewport
+        if (position.top <= window.innerHeight && position.bottom >= 0) {
+            setTimeout(function() {
+                // Calculate opacity based on how far the element is from the top of the viewport
+                let opacity = (window.innerHeight - position.top) / window.innerHeight;
+                
+                // Apply the calculated opacity
+                section.style.opacity = Math.min(opacity, 1);
+            }, index * 100);  // 100ms delay between each
+        }
+    });
+
+    // For project-card-fadein class
+    let projectCards = document.querySelectorAll('.project-card-fadein');
+    
+    projectCards.forEach(function(projectCard, index) {
+        let position = projectCard.getBoundingClientRect();
+        
+        // Check if the section is in the viewport
+        if (position.top <= window.innerHeight && position.bottom >= 0) {
+            setTimeout(function() {
+                // Calculate opacity based on how far the element is from the top of the viewport
+                let opacity = (window.innerHeight - position.top) / window.innerHeight;
+                
+                // Apply the calculated opacity and transform
+                projectCard.style.opacity = Math.min(opacity, 1);
+                projectCard.style.transform = `translateY(${Math.min(50 * (1 - opacity), 50)}px)`;
+            }, index * 200);  // 200ms delay between each
+        }
+    });
+});
