@@ -193,7 +193,7 @@ nav ul li {
 
 .icon {
     width: 6.875rem;
-    height: 6.25rem;
+    height: 7rem;
 }
 
 .icon-card {
@@ -240,6 +240,13 @@ nav ul li {
     width: 450px;
     padding: 1rem;
 }
+
+.project-card-fadein {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
 
 .project-container p {
     padding: 0.4rem;
@@ -359,6 +366,11 @@ footer {
     height: 3rem;
 }
 
+.first-set, .second-set, .third-set {
+    opacity: 0;
+    transition: opacity 0.6s ease-out;
+}
+
 @media screen and (max-width: 1040px) {
     .pc {
         display: none;
@@ -410,7 +422,7 @@ footer {
     }
 
     .bio {
-        margin-top: -10rem;
+        margin-top: -1rem;
         width: 20.5rem;
     }
 
@@ -429,7 +441,7 @@ footer {
 
     .icon {
         width: 5.875rem;
-        height: 5.25rem;
+        height: 6rem;
     }
 
     .projects-container {
@@ -438,7 +450,7 @@ footer {
     }
 
     .project-container {
-        width: 20.875rem;
+        width: 20.875rem;  
     }
 
     .contact-form-container {
@@ -497,7 +509,7 @@ footer {
     }
 
     .bio {
-        margin-top: -7rem;
+        margin-top: -2rem;
         width: 20.5rem;
     }
 
@@ -516,7 +528,7 @@ footer {
 
     .icon {
         width: 5.875rem;
-        height: 5.25rem;
+        height: 6rem;
     }
 
     .projects-container {
