@@ -617,6 +617,12 @@ footer {
     color: #fff;
 }
 
+.link-box a:hover{
+    color: #ff7235;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
 .mt30 {
     margin-top: 30px;
 }
