@@ -369,7 +369,10 @@ footer {
     opacity: 0;
     transition: opacity 0.6s ease-out;
 }
-
+.swiper-block {
+    padding-top: 30px;
+    background: var(--bg-color);
+}
 
 .swiper {
     width: 540px;
