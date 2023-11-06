@@ -90,18 +90,18 @@ window.addEventListener('scroll', function() {
 });
 
 const swiper = new Swiper(".swiper", {
-    loop: true, // ループ
-    speed: 600, // 少しゆっくり(デフォルトは300)
-    mousewheel: true, // マウスホイールでスライド
-    direction: "vertical", // 縦方向
-    autoplay: { // 自動再生
-      delay: 3000, // 1秒後に次のスライド
-      disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
+    loop: true, 
+    speed: 600, 
+    mousewheel: true, 
+    direction: "vertical", 
+    autoplay: { 
+        delay: 3000, 
+        disableOnInteraction: false, 
     },
-    //ページネーション
+    
     pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     // 前後の矢印
     // navigation: {
