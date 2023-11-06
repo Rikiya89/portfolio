@@ -369,7 +369,10 @@ footer {
     opacity: 0;
     transition: opacity 0.6s ease-out;
 }
-
+.swiper-block {
+    padding-top: 30px;
+    background: var(--bg-color);
+}
 
 .swiper {
     width: 540px;
@@ -635,6 +638,12 @@ iframe {
 
 .link-box a {
     color: #fff;
+}
+
+.link-box a:hover{
+    color: #ff7235;
+    cursor: pointer;
+    transition: 0.6s;
 }
 
 .mt30 {
