@@ -567,6 +567,30 @@ iframe {
     .contact-form-container {
         max-width: 23.75rem;
     }
+
+    .swiper-block {
+        padding-top: 30px;
+        background: var(--bg-color);
+    }
+    
+    .swiper {
+        width: 326px;
+        height: 780px;
+    }
+    
+    iframe {
+        width: 550px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .swiper-button-prev {
+        display: none;  
+    }
+    
+    .swiper-button-next {
+        display: none;
+    }
 }
 /* sp02 */
 @media screen and (max-width: 420px) {
