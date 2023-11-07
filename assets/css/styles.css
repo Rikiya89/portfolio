@@ -20,6 +20,7 @@
     --bottom-margin-2: 1rem;
     --line-height: 1.8rem;
     --transition: 0.3s;
+    --bullet-background-color: red;
 }
 
 /* Variables end */
@@ -392,7 +393,6 @@ iframe {
 .swiper-button-next {
     display: none;
 }
-
 
 /* tablet */
 @media screen and (max-width: 1040px) {
