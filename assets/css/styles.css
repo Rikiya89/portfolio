@@ -274,6 +274,8 @@ nav ul li {
 
 .contact {
     margin-top: 2rem;
+    background-color: #fff;
+    padding-top: 30px;
 }
 
 .contact h2 {
@@ -375,9 +377,13 @@ footer {
     background: var(--bg-color);
 }
 
+.swiper-slide {
+    margin-top: 30px;
+}
+
 .swiper {
     width: 540px;
-    height: 780px;
+    height: 930px;
 }
 
 iframe {
@@ -467,7 +473,10 @@ iframe {
         width: 5.875rem;
         height: 6rem;
     }
-
+    .swiper {
+        width: 540px;
+        height: 927px;
+    }
     .projects-container {
         flex-direction: column;
         align-items: center;
@@ -574,8 +583,8 @@ iframe {
     }
     
     .swiper {
-        width: 326px;
-        height: 780px;
+        width: 396px;
+        height: 783px;
     }
     
     iframe {
