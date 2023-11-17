@@ -32,10 +32,10 @@ navLink.forEach((link) =>
 );
 
 //Fade-In animations 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     let iconSections = document.querySelectorAll('.iconSection');
 
-    iconSections.forEach(function(iconSection) {
+    iconSections.forEach(function (iconSection) {
         let position = iconSection.getBoundingClientRect();
 
         // Check if the section is in the viewport
@@ -49,20 +49,20 @@ window.addEventListener('scroll', function() {
     });
 });
 
-
-window.addEventListener('scroll', function() {
+//scroll animations
+window.addEventListener('scroll', function () {
     // For iconSection and first-set classes
     let commonSections = document.querySelectorAll('.iconSection, .first-set');
-    
-    commonSections.forEach(function(section, index) {
+
+    commonSections.forEach(function (section, index) {
         let position = section.getBoundingClientRect();
-        
+
         // Check if the section is in the viewport
         if (position.top <= window.innerHeight && position.bottom >= 0) {
-            setTimeout(function() {
+            setTimeout(function () {
                 // Calculate opacity based on how far the element is from the top of the viewport
                 let opacity = (window.innerHeight - position.top) / window.innerHeight;
-                
+
                 // Apply the calculated opacity
                 section.style.opacity = Math.min(opacity, 1);
             }, index * 100);  // 100ms delay between each
@@ -71,16 +71,16 @@ window.addEventListener('scroll', function() {
 
     // For project-card-fadein class
     let projectCards = document.querySelectorAll('.project-card-fadein');
-    
-    projectCards.forEach(function(projectCard, index) {
+
+    projectCards.forEach(function (projectCard, index) {
         let position = projectCard.getBoundingClientRect();
-        
+
         // Check if the section is in the viewport
         if (position.top <= window.innerHeight && position.bottom >= 0) {
-            setTimeout(function() {
+            setTimeout(function () {
                 // Calculate opacity based on how far the element is from the top of the viewport
                 let opacity = (window.innerHeight - position.top) / window.innerHeight;
-                
+
                 // Apply the calculated opacity and transform
                 projectCard.style.opacity = Math.min(opacity, 1);
                 projectCard.style.transform = `translateY(${Math.min(50 * (1 - opacity), 50)}px)`;
@@ -89,19 +89,24 @@ window.addEventListener('scroll', function() {
     });
 });
 
+//swiper animation
 const swiper = new Swiper(".swiper", {
-loop: true, // ループ
-    speed: 1200, // 少しゆっくり(デフォルトは300)
-mousewheel: true, // マウスホイールでスライド
-direction: "vertical", // 縦方向
+    loop: true, // ループ
+    speed: 1200, // 
+    mousewheel: true, // マウスホイールでスライド
+    direction: "vertical", // 縦方向
     autoplay: { // 自動再生
-    delay: 3000, // 1秒後に次のスライド
-    disableOnInteraction: false, // 矢印をクリックしても自動再生を止めない
-},
-//ページネーション
-pagination: {
-el: ".swiper-pagination",
-clickable: true,
-},
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    //ページネーション
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
 });
 
