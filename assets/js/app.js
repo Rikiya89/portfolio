@@ -103,6 +103,8 @@ window.addEventListener('scroll', function () {
     });
 });
 
+
+
 //swiper animation
 const swiper = new Swiper(".swiper", {
     loop: true, // ループ
