@@ -1,3 +1,17 @@
+window.onload = function() {
+    let spinner = document.querySelector('.intersecting-circles-spinner');
+    if (spinner) {
+        // Apply fade-out animation
+        spinner.classList.add('fade-out');
+
+        // Wait for the animation to finish before hiding the spinner
+        spinner.addEventListener('animationend', () => {
+            spinner.style.display = 'none';
+        });
+    }
+};
+
+
 // scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 
