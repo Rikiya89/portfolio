@@ -726,6 +726,10 @@ a {
     margin-right: 30px;
 }
 
+.works04-img {
+    width: 600px;
+}
+
 /* tablet */
 @media screen and (max-width: 1040px) {
     .pc {
@@ -901,6 +905,10 @@ a {
         margin-left: 18px;
         margin-right: 18px;
     }
+
+    .works04-img {
+        width: 600px;
+    }
 }
 
 /* sp02 */
@@ -988,6 +996,8 @@ a {
     }
 }
 
+
+/*load animation*/
 .intersecting-circles-spinner,
 .intersecting-circles-spinner * {
     box-sizing: border-box;
@@ -1017,7 +1027,7 @@ a {
 
 .intersecting-circles-spinner .circle {
     display: block;
-    border: 2px solid #4756df;
+    border: 3px solid #4756df;
     border-radius: 50%;
     height: 100%;
     width: 100%;
