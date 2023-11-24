@@ -907,7 +907,7 @@ a {
     }
 
     .works04-img {
-        width: 600px;
+        width: 450px;
     }
 }
 
@@ -993,6 +993,11 @@ a {
     .mlr {
         margin-left: 18px;
         margin-right: 18px;
+    }
+    .works04-img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
