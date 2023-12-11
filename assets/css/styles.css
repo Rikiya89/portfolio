@@ -715,7 +715,7 @@ a {
 
 .product-inner iframe {
     width: 600px;
-    height: 450px;
+    height: 570px;
 }
 
 .mlr {
@@ -811,7 +811,7 @@ a {
 
     .product-inner iframe {
         width: 600px;
-        height: 450px;
+        height: 570px;
     }
 }
 
@@ -910,6 +910,11 @@ a {
     .works04-img {
         width: 450px;
     }
+
+    .product-inner iframe {
+        width: 350px;
+        height: 400px;
+    }
 }
 
 /* sp02 */
@@ -999,6 +1004,10 @@ a {
         width: 300px;
         display: block;
         margin: 0 auto;
+    }
+    .product-inner iframe {
+        width: 350px;
+        height: 400px;
     }
 }
 
