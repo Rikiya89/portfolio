@@ -405,9 +405,6 @@ iframe {
     display: none;
 }
 
-.bg:active {
-    background: #4756df;
-}
 
 /* tablet */
 @media screen and (max-width: 1040px) {
@@ -728,6 +725,10 @@ a {
 
 .works04-img {
     width: 600px;
+}
+
+.mr0 :nth-child(1) {
+    margin-right: 0;
 }
 
 /* tablet */
