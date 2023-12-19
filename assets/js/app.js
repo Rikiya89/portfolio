@@ -103,8 +103,6 @@ window.addEventListener('scroll', function () {
     });
 });
 
-
-
 //swiper animation
 const swiper = new Swiper(".swiper", {
     loop: true, // ループ
@@ -125,4 +123,3 @@ const swiper = new Swiper(".swiper", {
         prevEl: ".swiper-button-prev",
     },
 });
-
