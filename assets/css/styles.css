@@ -189,6 +189,16 @@ nav ul li {
     margin-bottom: 1rem;
 }
 
+.skills-wrapper {
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.skill-wrapper .first-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
 .skills-wrapper img {
     padding: 1.25rem;
 }
