@@ -163,7 +163,7 @@ nav ul li {
 
 .more-about-inner {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 .more-about h2 {
@@ -215,7 +215,7 @@ nav ul li {
 
 .project-inner {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-inline: auto;
 }
 
 .project-pic {
@@ -287,7 +287,7 @@ nav ul li {
 
 .contact-form-container {
     max-width: 40.75rem;
-    margin: 0 auto;
+    margin-inline: auto;
     padding: 0.938rem;
     border-radius: 5px;
     box-shadow: 0 3px 10px var(--secondary-shadow);
@@ -649,8 +649,7 @@ a {
 
 .works-box-inner {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-inline: auto;
 }
 
 .tittle-box {
@@ -777,8 +776,7 @@ a {
 
     .works-box-inner {
         max-width: 660px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
     }
 
     .tittle-box {
@@ -825,7 +823,6 @@ a {
         display: block;
     }
 
-
     /*changes reflects on screen with a width of 720px and below*/
     nav {
         padding: 1.5rem 1rem;
@@ -862,8 +859,7 @@ a {
 
     .works-box-inner {
         max-width: 420px;
-        margin-left: auto;
-        margin-right: auto;
+        margin-inline: auto;
     }
 
     .tittle-box {
@@ -1002,8 +998,8 @@ a {
     }
     .works04-img {
         width: 300px;
-        display: block;
-        margin: 0 auto;
+        display: block; 
+        margin-inline: auto;
     }
     .product-inner iframe {
         width: 350px;
